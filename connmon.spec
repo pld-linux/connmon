@@ -1,8 +1,10 @@
+# TODO:
+# - pack gconnmon to separate package
 Summary:	Connection Monitor
 Summary(pl):	Monitor po³±czeñ
 Name:		connmon
 Version:	0.13.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
@@ -33,7 +35,8 @@ z programem), aby otrzymywaæ prêdko¶ci przesy³u danych.
 %setup -q
 
 %build
-%{__make} CFLAGS="-DHAVE_CONFIG_H -Wall -I%{_includedir}/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
+%{__make} \
+	CFLAGS="-DHAVE_CONFIG_H -Wall `gtk-config --cflags` -I%{_includedir}/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
 
 
 %install
@@ -41,7 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install src/connmon/connmon $RPM_BUILD_ROOT%{_sbindir}
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
