@@ -25,7 +25,7 @@ necessary to get the transfer rates displayed.
 
 %description -l pl
 Connection Monitor to program monitoruj±cy po³±czenia i przepustowo¶æ
-z konsolowym interfejsem u¿ytkownika. Wy¶wietla listê odwartych
+z konsolowym interfejsem u¿ytkownika. Wy¶wietla listê otwartych
 po³±czeñ TCP i UDP wraz z prêdko¶ci± przesy³u danych (w bajtach na
 sekundê) dla ka¿dego po³±czenia. Wymaga j±dra 2.4 z mo¿liwo¶ciami
 ¶ledzenia po³±czeñ w Netfilterze. Potrzebna jest ma³a ³ata (za³±czona
