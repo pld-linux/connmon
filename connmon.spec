@@ -38,7 +38,6 @@ z programem), aby otrzymywaæ prêdko¶ci przesy³u danych.
 %{__make} \
 	CFLAGS="-DHAVE_CONFIG_H -Wall `gtk-config --cflags` -I%{_includedir}/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sbindir}
@@ -50,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc  kernel ChangeLog NEWS README TODO
+%doc kernel ChangeLog NEWS README TODO
 %attr(755,root,root) %{_sbindir}/*
