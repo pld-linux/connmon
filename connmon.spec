@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
+# Source0-md5:	4225982dd6399102c005ebf1409439a2
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
 BuildRequires:	ncurses-devel >= 5.2
