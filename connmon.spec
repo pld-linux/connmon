@@ -1,7 +1,7 @@
 Summary:	Connection Monitor
 Summary(pl):	Monitor po³±czeñ
 Name:		connmon
-Version:	0.8.0
+Version:	0.9.0
 Release:	1
 License:	GPL
 Group:		Applications/Networking
