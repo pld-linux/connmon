@@ -9,7 +9,7 @@ Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
 BuildRequires:	ncurses-devel >= 5.2
-BuildRequires:  gtk+-devel
+BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,7 @@ z programem), aby otrzymywaæ prêdko¶ci przesy³u danych.
 %setup -q
 
 %build
-%{__make} CFLAGS="-DHAVE_CONFIG_H -Wall -I/usr/include/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
+%{__make} CFLAGS="-DHAVE_CONFIG_H -Wall -I%{_includedir}/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
 
 
 %install
