@@ -5,8 +5,6 @@ Version:	0.9.0
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
