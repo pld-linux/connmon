@@ -1,12 +1,12 @@
 Summary:	Connection Monitor
 Summary(pl):	Monitor po³±czeñ
 Name:		connmon
-Version:	0.12.0
+Version:	0.13.0
 Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
-# Source0-md5:	4225982dd6399102c005ebf1409439a2
+# Source0-md5:	b898f86769eb44ad6847bfa8f0a379f7
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
 BuildRequires:	ncurses-devel >= 5.2
