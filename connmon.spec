@@ -8,8 +8,8 @@ Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 URL:		http://www.student.lu.se/~nbi98oli/
-Requires:	adns-devel
-Requires:	ncurses-devel >= 5.2
+BuildRequires:	adns-devel
+BuildRequires:	ncurses-devel >= 5.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
