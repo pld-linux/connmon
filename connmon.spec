@@ -1,7 +1,7 @@
 Summary:	Connection Monitor
 Summary(pl):	Monitor po³±czeñ
 Name:		connmon
-Version:	0.9.0
+Version:	0.12.0
 Release:	1
 License:	GPL
 Group:		Applications/Networking
@@ -9,6 +9,7 @@ Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
 BuildRequires:	ncurses-devel >= 5.2
+BuildRequires:  gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,7 +32,8 @@ z programem), aby otrzymywaæ prêdko¶ci przesy³u danych.
 %setup -q
 
 %build
-%{__make} CFLAGS="-DHAVE_CONFIG_H -Wall -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
+%{__make} CFLAGS="-DHAVE_CONFIG_H -Wall -I/usr/include/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
+
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -39,12 +41,11 @@ install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install src/connmon/connmon $RPM_BUILD_ROOT%{_sbindir}
 
-gzip -9nf ChangeLog NEWS README TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz kernel
+%doc  kernel ChangeLog NEWS README TODO
 %attr(755,root,root) %{_sbindir}/*
