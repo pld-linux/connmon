@@ -11,6 +11,7 @@ Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 # Source0-md5:	b898f86769eb44ad6847bfa8f0a379f7
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
+BuildRequires:	bison
 BuildRequires:	ncurses-devel >= 5.2
 BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
