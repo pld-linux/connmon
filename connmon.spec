@@ -12,8 +12,8 @@ Source0:	http://www.student.lu.se/~nbi98oli/src/%{name}-%{version}.tar.gz
 URL:		http://www.student.lu.se/~nbi98oli/
 BuildRequires:	adns-devel
 BuildRequires:	bison
-BuildRequires:	ncurses-devel >= 5.2
 BuildRequires:	gtk+-devel
+BuildRequires:	ncurses-devel >= 5.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,7 +37,7 @@ z programem), aby otrzymywaæ prêdko¶ci przesy³u danych.
 
 %build
 %{__make} \
-	CFLAGS="-DHAVE_CONFIG_H -Wall `gtk-config --cflags` -I%{_includedir}/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
+	CFLAGS="-DHAVE_CONFIG_H -Wall `gtk-config --cflags` -I/usr/include/ncurses -I../compat -I../libconnmon -I../libhpnl -I.. -I. %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
