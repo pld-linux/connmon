@@ -1,7 +1,7 @@
 # TODO:
 # - pack gconnmon to separate package
 Summary:	Connection Monitor
-Summary(pl.UTF-8):   Monitor połączeń
+Summary(pl.UTF-8):	Monitor połączeń
 Name:		connmon
 Version:	0.13.0
 Release:	2
