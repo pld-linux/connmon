@@ -1,7 +1,7 @@
 # TODO:
 # - pack gconnmon to separate package
 Summary:	Connection Monitor
-Summary(pl):	Monitor po³±czeñ
+Summary(pl.UTF-8):   Monitor poÅ‚Ä…czeÅ„
 Name:		connmon
 Version:	0.13.0
 Release:	2
@@ -24,13 +24,13 @@ connection. This requires a linux 2.4 kernel with Netfilter connection
 tracking facilities. A small patch (included with ConnMon) is
 necessary to get the transfer rates displayed.
 
-%description -l pl
-Connection Monitor to program monitoruj±cy po³±czenia i przepustowo¶æ
-z konsolowym interfejsem u¿ytkownika. Wy¶wietla listê otwartych
-po³±czeñ TCP i UDP wraz z prêdko¶ci± przesy³u danych (w bajtach na
-sekundê) dla ka¿dego po³±czenia. Wymaga j±dra 2.4 z mo¿liwo¶ciami
-¶ledzenia po³±czeñ w Netfilterze. Potrzebna jest ma³a ³ata (za³±czona
-z programem), aby otrzymywaæ prêdko¶ci przesy³u danych.
+%description -l pl.UTF-8
+Connection Monitor to program monitorujÄ…cy poÅ‚Ä…czenia i przepustowoÅ›Ä‡
+z konsolowym interfejsem uÅ¼ytkownika. WyÅ›wietla listÄ™ otwartych
+poÅ‚Ä…czeÅ„ TCP i UDP wraz z prÄ™dkoÅ›ciÄ… przesyÅ‚u danych (w bajtach na
+sekundÄ™) dla kaÅ¼dego poÅ‚Ä…czenia. Wymaga jÄ…dra 2.4 z moÅ¼liwoÅ›ciami
+Å›ledzenia poÅ‚Ä…czeÅ„ w Netfilterze. Potrzebna jest maÅ‚a Å‚ata (zaÅ‚Ä…czona
+z programem), aby otrzymywaÄ‡ prÄ™dkoÅ›ci przesyÅ‚u danych.
 
 %prep
 %setup -q
